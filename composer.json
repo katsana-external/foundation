@@ -137,6 +137,18 @@
         {
             "type": "vcs",
             "url": "https://github.com/katsana-external/contracts"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/memory"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/avatar"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/support"
         }
     ]
 }
