@@ -40,8 +40,8 @@
         "laravie/html": "^7.3",
         "orchestra/asset": "^7.x-dev",
         "orchestra/auth": "7.x-dev",
-        "orchestra/contracts": "^7.0",
-        "orchestra/extension": "dev-master",
+        "orchestra/contracts": "7.x-dev",
+        "orchestra/extension": "7.x-dev",
         "orchestra/html": "7.x-dev",
         "orchestra/kernel": "^7.x.dev",
         "orchestra/memory": "^7.0",
@@ -129,6 +129,14 @@
         {
             "type": "vcs",
             "url": "https://github.com/katsana-external/query-filter"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/extension"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/contracts"
         }
     ]
 }
