@@ -2,7 +2,14 @@
     "name": "orchestra/foundation",
     "description": "Orchestra Platform Foundation",
     "homepage": "http://orchestraplatform.com/docs/latest/",
-    "keywords": ["orchestra-platform", "orchestral", "laravel", "administrator", "admin", "user-management"],
+    "keywords": [
+        "orchestra-platform",
+        "orchestral",
+        "laravel",
+        "administrator",
+        "admin",
+        "user-management"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +20,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Orchestra\\Foundation\\" : "src/"
+            "Orchestra\\Foundation\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -21,35 +28,36 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Orchestra\\Tests\\Controller\\" : "tests/Controller/",
-            "Orchestra\\Tests\\Feature\\" : "tests/Feature/",
-            "Orchestra\\Tests\\Unit\\" : "tests/Unit/"
+            "Orchestra\\Tests\\Controller\\": "tests/Controller/",
+            "Orchestra\\Tests\\Feature\\": "tests/Feature/",
+            "Orchestra\\Tests\\Unit\\": "tests/Unit/"
         }
     },
     "require": {
-        "php": "^7.3 || ^8.0",
-        "laravel/framework": "^8.40",
-        "laravie/authen": "^2.5",
-        "laravie/html": "^7.1",
-        "orchestra/asset": "^6.0",
-        "orchestra/auth": "^6.0",
-        "orchestra/contracts": "^6.0",
-        "orchestra/extension": "^6.0",
-        "orchestra/html": "^6.1",
-        "orchestra/kernel": "^6.0",
-        "orchestra/memory": "^6.0",
-        "orchestra/messages": "^6.0",
-        "orchestra/model": "^6.0",
-        "orchestra/notifier": "^6.0",
-        "orchestra/support": "^6.1.1",
-        "orchestra/translation": "^6.0",
-        "orchestra/view": "^6.0",
-        "orchestra/widget": "^6.0"
+        "php": "^8.0",
+        "laravel/framework": "^9.0",
+        "laravie/authen": "^3.0",
+        "laravie/html": "^7.3",
+        "orchestra/asset": "^7.x-dev",
+        "orchestra/auth": "7.x-dev",
+        "orchestra/contracts": "^7.0",
+        "orchestra/extension": "dev-master",
+        "orchestra/html": "7.x-dev",
+        "orchestra/kernel": "^7.x.dev",
+        "orchestra/memory": "^7.0",
+        "orchestra/messages": "7.0.x-dev",
+        "orchestra/model": "7.x-dev",
+        "orchestra/notifier": "^7.0",
+        "orchestra/support": "^7.0",
+        "orchestra/translation": "7.x-dev",
+        "orchestra/view": "7.0.x-dev",
+        "orchestra/widget": "7.x-dev"
     },
     "require-dev": {
-        "orchestra/canvas": "^6.1",
-        "orchestra/installer": "^6.0",
-        "orchestra/testing": "^6.0"
+        "orchestra/canvas": "^7.0",
+        "orchestra/installer": "^7.x-dev",
+        "orchestra/testbench": "^7.0",
+        "orchestra/testing": "7.x-dev"
     },
     "suggest": {
         "orchestra/avatar": "Add gravatar support for Orchestra Platform (^6.0).",
@@ -73,8 +81,54 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "6.0-dev"
+            "dev-master": "7.0-dev"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/asset"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/auth"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/model"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/dhosa"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/html"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/kernel"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/widget"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/testing"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/installer"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/translation"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/query-filter"
+        }
+    ]
 }
