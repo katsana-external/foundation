@@ -8,7 +8,8 @@ class ServiceProviderTest extends TestCase
     public function it_can_resolve_orchestra_publisher()
     {
         $this->assertInstanceOf(
-            '\Orchestra\Foundation\Publisher\PublisherManager', $this->app->make('orchestra.publisher')
+            '\Orchestra\Foundation\Publisher\PublisherManager',
+            $this->app->make('orchestra.publisher')
         );
     }
 
@@ -16,11 +17,13 @@ class ServiceProviderTest extends TestCase
     public function it_can_resolve_eloquent_models()
     {
         $this->assertInstanceOf(
-            '\Orchestra\Model\Role', $this->app->make('orchestra.role')
+            '\Orchestra\Model\Role',
+            $this->app->make('orchestra.role')
         );
 
         $this->assertInstanceOf(
-            '\Orchestra\Model\User', $this->app->make('orchestra.user')
+            '\Orchestra\Model\User',
+            $this->app->make('orchestra.user')
         );
     }
 
@@ -28,7 +31,8 @@ class ServiceProviderTest extends TestCase
     public function it_can_resolve_config_cache_command()
     {
         $this->assertInstanceOf(
-            '\Orchestra\Config\Console\ConfigCacheCommand', $this->app['command.config.cache']
+            '\Orchestra\Config\Console\ConfigCacheCommand',
+            $this->app['command.config.cache']
         );
     }
 }

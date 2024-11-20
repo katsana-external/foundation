@@ -57,7 +57,8 @@ class HttpServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerRouteMiddleware(
-            $this->app->make(Router::class), $this->app->make(Kernel::class)
+            $this->app->make(Router::class),
+            $this->app->make(Kernel::class)
         );
 
         $this->bootRoutes();

@@ -8,15 +8,15 @@ Released: 2020-08-29
 
 ### Changes
 
-* Trivial updates.
+-   Trivial updates.
 
 ## 5.1.1
 
 Released: 2020-07-23
 
-### Fixes 
+### Fixes
 
-* `email.username` doesn't need to be encrypted when running `orchestra:configure-email`.
+-   `email.username` doesn't need to be encrypted when running `orchestra:configure-email`.
 
 ## 5.1.0
 
@@ -24,7 +24,7 @@ Released: 2020-05-03
 
 ### Changes
 
-* Use Laravel markdown email template for basic notification.
+-   Use Laravel markdown email template for basic notification.
 
 ## 5.0.2
 
@@ -32,7 +32,7 @@ Released: 2020-04-22
 
 ### Fixes
 
-* Fixes configurating email using `orchestra:configure-email` artisan command.
+-   Fixes configurating email using `orchestra:configure-email` artisan command.
 
 ## 5.0.1
 
@@ -40,7 +40,7 @@ Released: 2020-04-05
 
 ### Fixes
 
-* Fixes fallback to configuration for mail setting.
+-   Fixes fallback to configuration for mail setting.
 
 ## 5.0.0
 
@@ -48,10 +48,19 @@ Released: 2020-04-03
 
 ### Added
 
-* Added `Orchestra\Foundation\Actions\MailConfigurationUpdater`.
-* Added `orchestra:configure-mail` command.
+-   Added `Orchestra\Foundation\Actions\MailConfigurationUpdater`.
+-   Added `orchestra:configure-mail` command.
 
 ### Changes
 
-* Update support for Laravel Framework v7.
-* Update Eloquent Hot-Swap capability with `laravie/dhosa`.
+-   Update support for Laravel Framework v7.
+-   Update Eloquent Hot-Swap capability with `laravie/dhosa`.
+
+## [Unreleased]
+
+### Changed
+
+-   Upgraded to Laravel 9.x
+-   Updated validation rule namespaces
+-   Updated test assertions to use strict JSON matching
+-   Minimum PHP version requirement increased to 8.0.2
