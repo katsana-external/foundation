@@ -44,11 +44,11 @@
         "orchestra/extension": "7.x-dev",
         "orchestra/html": "7.x-dev",
         "orchestra/kernel": "^7.x.dev",
-        "orchestra/memory": "^7.0",
+        "orchestra/memory": "^7.x-dev",
         "orchestra/messages": "7.0.x-dev",
         "orchestra/model": "7.x-dev",
-        "orchestra/notifier": "^7.0",
-        "orchestra/support": "^7.0",
+        "orchestra/notifier": "^7.x-dev",
+        "orchestra/support": "^7.x-dev",
         "orchestra/translation": "7.x-dev",
         "orchestra/view": "7.0.x-dev",
         "orchestra/widget": "7.x-dev"
@@ -128,10 +128,6 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/katsana-external/query-filter"
-        },
-        {
-            "type": "vcs",
             "url": "https://github.com/katsana-external/extension"
         },
         {
@@ -149,6 +145,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/katsana-external/support"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/katsana-external/notifier"
         }
     ]
 }
