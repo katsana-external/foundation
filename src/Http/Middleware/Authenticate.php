@@ -31,6 +31,10 @@ class Authenticate extends Can
 
         $url = $this->config->get('orchestra/foundation::routes.guest');
 
+        if (! $url) {
+            return $this->response->redirectGuest($this->foundation->handles('app::login'));
+        }
+
         return $this->response->redirectGuest($this->foundation->handles($url));
     }
 }
